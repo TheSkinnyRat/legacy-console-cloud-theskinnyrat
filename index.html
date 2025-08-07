@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Cloud Console - Nyrat.ID</title>
+  
+  <!-- Progress bar loading -->
+  <script src="assets/frontend/vendor/pace/pace.min.js"></script>
+  <link rel="stylesheet" href="assets/frontend/vendor/pace/pace.css">
+  <link rel="stylesheet" href="https://unpkg.com/placeholder-loading/dist/css/placeholder-loading.min.css">
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Nyrat Cloud Console">
+  <meta name="author" content="">
+
+  <link rel="icon" href="assets/frontend/img/favicon/rat_server.png">
+
+  <!-- Custom fonts -->
+  <link href="assets/frontend/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <!-- Bootstrap styles -->
+  <link href="assets/frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for ALL page-->
+  <link href="assets/frontend/css/index.css" rel="stylesheet">
+
+  <!-- Custom styles for THIS page-->
+  <link href="assets/frontend/css/pages/main_page.css" rel="stylesheet">
+
+  <!-- Bootstrap core JavaScript-->
+  <script src="assets/frontend/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Core plugin JavaScript-->
+  <script src="assets/frontend/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Typed.js Plugin -->
+  <script src="assets/frontend/vendor/typed/typed.min.js"></script>
+</head>
+
+<body class="p-0" id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <div style="min-height: 100vh;"></div>
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column bg-white overflow-hidden">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Topbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white topbar h-auto container">
+          <div class="">
+            <a class="navbar-brand d-flex mr-auto text-primary" href="index.html">
+              <span class="font-weight-bold mx-1">
+                <i class="fas fa-cloud"></i> R. Cloud Console
+              </span>
+            </a>
+          </div>
+
+          <div class="topbar-divider d-none d-lg-block"></div>
+
+          <div class="navbar-text">
+            <button class="btn btn-link btn-sm d-lg-none rounded-circle" type="button" data-toggle="collapse" data-target="#navToggler1" aria-controls="navToggler1" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fa fa-bars"></i>
+            </button>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navToggler1">
+            <hr class="d-lg-none m-0">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0 ">
+              <li class="nav-item p-1 p-lg-0 dropdown">
+                <a class="btn btn-link text-decoration-none mr-1 btn-sm dropdown-toggle" href="#" id="menu_about" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="fas fa-project-diagram"></i> Menu List
+                </a>
+                <div class="dropdown-menu keep-open dropdown-menu-right animated--grow-in shadow-sm ml-2 ml-lg-0" aria-labelledby="menu_about">
+                  <h6 class="dropdown-header">Console Menu</h6>
+                  <a class="dropdown-item" href="#" onclick="alert('Terminal feature available in full version')"><i class="fab fa-ubuntu"></i> Debian Terminal</a>
+                  <a class="dropdown-item" href="#" onclick="alert('VPN Config feature available in full version')"><i class="fas fa-shield-alt"></i> VPN Config</a>
+                  <a class="dropdown-item" href="speedtest.html"><i class="fas fa-tachometer-alt"></i> Speed Test</a>
+                  <a class="dropdown-item" href="#" onclick="alert('Download Test feature available in full version')"><i class="fas fa-download"></i> Download Test</a>
+                  <a class="dropdown-item" href="#" onclick="alert('Documentation feature available in full version')"><i class="fas fa-book"></i> Documentation</a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <h6 class="dropdown-header">Cloud Menu <i class="fas fa-external-link-alt"></i></h6>
+                  <a class="dropdown-item" href="https://cloud.nyrat.id" target="_blank"><i class="fas fa-cloud"></i> Private Cloud</a>
+                  <a class="dropdown-item" href="https://agh.cloud.nyrat.id" target="_blank"><i class="fas fa-user-shield"></i> AdGuard Home</a>
+                  <a class="dropdown-item" href="https://pma.cloud.nyrat.id" target="_blank"><i class="fab fa-php"></i> PhpMyAdmin</a>
+                  <a class="dropdown-item" href="https://openvpn.cloud.nyrat.id" target="_blank"><i class="fas fa-cogs"></i> OpenVPN CTRL</a>
+                  <a class="dropdown-item" href="https://webmin.cloud.nyrat.id" target="_blank"><i class="fas fa-users-cog"></i> Web Admin</a>
+                  <a class="dropdown-item" href="https://vnstat.cloud.nyrat.id" target="_blank"><i class="fas fa-chart-bar"></i> Network Statistic</a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <h6 class="dropdown-header">Others</h6>
+                  <a class="dropdown-item" href="https://nyrat.id" target="_blank"><i class="fas fa-home"></i> Nyrat Home</a>
+                  <a class="dropdown-item" href="https://blog.nyrat.id" target="_blank"><i class="fas fa-blog"></i> Nyrat Blog</a>
+
+                  <div class="dropdown-divider"></div>
+
+                  <a class="dropdown-item" href="https://status-cloud.nyrat.id" target="_blank"><i class="fas fa-info-circle"></i> Cloud Status</a>
+                  <a class="dropdown-item" href="#" onclick="alert('Licenses feature available in full version')"><i class="fas fa-copyright"></i> Open Source Licenses</a>
+                </div>
+              </li>
+              <li class="nav-item p-1 p-lg-0">
+                <a href="speedtest.html" class="">
+                  <button class="btn btn-link text-decoration-none mr-1 btn-sm" type="button">
+                    <i class="fas fa-tachometer-alt"></i> Speed Test
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item p-1 p-lg-0">
+                <a href="#" data-toggle="modal" data-target="#ipModal">
+                  <button class="btn btn-light text-decoration-none mr-1 btn-sm" type="button">
+                    Your IP <span id="ip" class="font-weight-bold">Loading...</span> <i class="fas fa-external-link-alt"></i>
+                  </button>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </nav>
+        <!-- End of Topbar -->
+
+        <!-- Loading Placeholder -->
+        <div id="place_load" class="container pt-3">
+          <div class="row">
+            <div class="col-12 col-md-6">
+              <div class="ph-item rounded-lg border-0 shadow-0">
+                <div class="ph-col-12">
+                  <div class="ph-row">
+                    <div class="ph-col-6 big"></div>
+                    <div class="ph-col-6 big empty"></div>
+                    <div class="ph-col-4 big"></div>
+                    <div class="ph-col-8 big empty"></div>
+                  </div>
+                  <div class="ph-picture"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6">
+              <div class="ph-item rounded-lg border-0 shadow-0">
+                <div class="ph-col-12">
+                  <div class="ph-row d-none d-md-block">
+                    <div class="ph-col-12 big empty"></div>
+                    <div class="ph-col-12 big empty"></div>
+                  </div>
+                  <div class="ph-picture"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row d-none d-md-flex">
+            <div class="col-12 col-md-4">
+              <div class="ph-item rounded-lg border-0 shadow-0">
+                <div class="ph-col-12">
+                  <div class="ph-picture"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="ph-item rounded-lg border-0 shadow-0">
+                <div class="ph-col-12">
+                  <div class="ph-picture"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="ph-item rounded-lg border-0 shadow-0">
+                <div class="ph-col-12">
+                  <div class="ph-picture"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Main Content -->
+        <div id="main_content" style="display: none;" class="h-100">
+          <section id="secHeader" class="row h-75 my-3 my-md-0">
+            <div class="container my-auto">
+              <div class="row align-items-center">
+                <div class="col-12 col-md-6 order-md-2 text-center" data-aos="fade-left" data-aos-delay="100">
+                  <img class="img-fluid p-3 p-md-0" src="assets/frontend/img/svg/rat-console.svg" alt="server illustration" width="450px">
+                </div>
+                <div class="col-12 col-md-6 text-center mt-4 mt-md-0" data-aos="fade-right">
+                  <h1 class="h2 text-md-left pt-3 pt-md-0">
+                    Cloud Console
+                  </h1>
+                  <p class="h3 text-md-left">
+                    <span id="headerTyped" class="text-primary"></span>
+                  </p>
+                  <p class="lead text-muted text-md-left">
+                    Control, check, speedtest and
+                    <br>
+                    maintaining server by The.Skinny.Rat.
+                  </p>
+                  <div class="text-md-left">
+                    <a class="btn btn-md btn-primary shadow-sm" href="#" onclick="alert('Terminal feature available in full version')"><i class="fas fa-terminal"></i> Terminal SSH</a>
+                    <a class="btn btn-md btn-light shadow-sm" href="speedtest.html">Speed Test</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+      </div>
+      <!-- End of Main Content -->
+
+      <!-- Footer -->
+      <footer class="sticky-footer bg-white shadow-lg py-3">
+        <div class="container my-auto">
+          <div class="text-center my-auto">
+            <small>&copy; Nyrat Cloud 2021 by <a href="https://nyrat.id" target="_blank">Nyrat.ID</a> | <a href="https://instagram.com/the.skinny.rat" target="_blank">The.Skinny.Rat</a>
+            </small>
+          </div>
+        </div>
+      </footer>
+      <!-- End of Footer -->
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- IP Info Modal -->
+  <div class="modal fade" id="ipModal" tabindex="-1" role="dialog" aria-labelledby="ipModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="ipModalLabel">IP Info</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-info m-0" role="alert">
+            Your IP : <span id="ip_m" class="font-weight-bold"></span><br>
+            City : <span id="city_m" class="font-weight-bold"></span><br>
+            Country : <span id="country_name_m" class="font-weight-bold"></span> (<span id="country_code_m" class="font-weight-bold"></span>)<br>
+            ISP : <span id="org_m" class="font-weight-bold"></span><br>
+            Latitude : <span id="latitude_m" class="font-weight-bold"></span><br>
+            Longitude : <span id="longitude_m" class="font-weight-bold"></span><br>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    // IP Info functionality
+    $.getJSON("https://ipapi.co/json/", function(data) { 
+      $("#ip").html(data.ip); 
+      $("#city").html(data.city);
+      $("#org").html(data.org);
+
+      $("#ip_m").html(data.ip); 
+      $("#city_m").html(data.city);
+      $("#country_name_m").html(data.country_name);
+      $("#country_code_m").html(data.country_code);
+      $("#org_m").html(data.org);
+      $("#latitude_m").html(data.latitude);
+      $("#longitude_m").html(data.longitude);
+    });
+
+    // Typed.js init
+    var typed = new Typed("#headerTyped", {
+      strings: ["Nyrat Cloud Control.", "Nyrat Cloud Status.", "Cloud Terminal SSH.", "Private Cloud."],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 2000,
+      startDelay: 0,
+      loop: true
+    });
+  </script>
+
+  <!-- Main page script -->
+  <script src="assets/frontend/js/index.js"></script>
+
+</body>
+
+</html>
